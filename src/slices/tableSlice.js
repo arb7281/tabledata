@@ -1,20 +1,20 @@
 import {createSlice} from "@reduxjs/toolkit"
 
 const initialState = {
-    formData:null,
+    formDataList: [],
 }
 
 export const tableSlice = createSlice ({
     name:"table",
     initialState,
     reducers:{
-        setformData(state, value){
-            state.formData = value.payload
+        addFormData(state, action){
+            state.formDataList = [...state.formDataList, action.payload];
         },
 
     }
 })
 
-export const {setformData} = tableSlice.actions;
+export const {addFormData} = tableSlice.actions;
 
 export default tableSlice.reducer
