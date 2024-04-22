@@ -1,8 +1,9 @@
 # tabledata
-A small project showcasing API communication with react and node.js 
+A small project showcasing use of table and state management in react
 included functionalities
-you can upload a file/ saved at server
-you can download the uploaded file but bfore downloading you would need to provide a password which was generated when upload finished
+after fillining all the fields in form and submitting below table will be popularized according to added informations
+you can view the same table in next page utilizing the react router library
+please ignore css I just built this dmall project to furnish the skills
 make sure you install node modules
 npm init -y
 
